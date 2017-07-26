@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>FORM TIME</h1>
+      <form class="" action="/signup" method="post">
+        <input type="text" name="name" value="" placeholder = "Name">
+        <input type="email" name="email" value="" placeholder = "Email">
+        <input type="text" name="yob" value="" placeholder = "Year of Birth">
+        <select class="jobs" name="jobs">
+          <option value="">Pick a position...</option>
+          <option value="Technical Manager">Technical Manager</option>
+          <option value="Developer">Developer</option>
+          <option value="UI Designer">UI Designer</option>
+          <option value="Graphic Designer">Graphic Designer</option>
+        </select>
+        <input type="password" name="password" value="" placeholder = "Password">
+        <button type="submit" name="submitbutton">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
