@@ -18,7 +18,7 @@ app.get('/', (request, response) => {
 
 app.post('/signup', (request, response) => {
   request.checkBody('name', 'You must enter a name').notEmpty().isLength(0, 100)
-  request.checkBody('email', 'You must enter an email').notEmpty().isLength(0, 100)
+  request.checkBody('email', 'You must enter an email').isEmail().notEmpty().isLength(0, 100)
   request.checkBody('yob', 'Year of Birth must be number between 1900 - 2017').isInt({ min: 1900, max: 2017 })
   request.checkBody('jobs', 'You must select a job from the list').notEmpty()
   request.checkBody('password', 'You must enter a password longer than 8 characters').notEmpty().isLength(8, undefined)

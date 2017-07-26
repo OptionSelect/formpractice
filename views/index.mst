@@ -8,18 +8,45 @@
     <div class="container">
       <h1>FORM TIME</h1>
       <form class="" action="/signup" method="post">
-        <input type="text" name="name" value="" placeholder = "Name">
-        <input type="email" name="email" value="" placeholder = "Email">
-        <input type="text" name="yob" value="" placeholder = "Year of Birth">
-        <select class="jobs" name="jobs">
-          <option value="">Pick a position...</option>
-          <option value="Technical Manager">Technical Manager</option>
-          <option value="Developer">Developer</option>
-          <option value="UI Designer">UI Designer</option>
-          <option value="Graphic Designer">Graphic Designer</option>
-        </select>
-        <input type="password" name="password" value="" placeholder = "Password">
-        <button type="submit" name="submitbutton">Submit</button>
+        <p>
+          <label for="name">Name:
+            <input type="text" name="name" value="" placeholder = "Name">
+          </label>
+        </p>
+
+        <p>
+          <label for="email">Email:
+            <input type="email" name="email" value="" placeholder = "Email">
+          </label>
+        </p>
+
+        <p>
+          <label for="yob">Year of Birth (between 1900-2017):
+            <input type="text" name="yob" value="" placeholder = "Birthyear">
+          </label>
+        </p>
+
+        <p>
+          <label for="jobs">List of Jobs:
+            <select class="jobs" name="jobs">
+              <option value="">Pick a position...</option>
+              <option value="Technical Manager">Technical Manager</option>
+              <option value="Developer">Developer</option>
+              <option value="UI Designer">UI Designer</option>
+              <option value="Graphic Designer">Graphic Designer</option>
+            </select>
+          </label>
+        </p>
+
+        <p>
+          <label for="password">Please Enter your Password:
+            <input type="password" name="password" value="" placeholder = "Password">
+          </label>
+        </p>
+
+        <p>
+          <button type="submit" name="submitbutton">Submit</button>
+        </p>
       </form>
     </div>
   </body>
